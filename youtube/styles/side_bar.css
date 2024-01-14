@@ -1,0 +1,27 @@
+.side_bar{
+  background-color: rgb(178, 29, 29);
+  position: fixed;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  width: 100px;   
+}
+.div-sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 17%;
+
+  background-color: white;
+  cursor: pointer;
+}
+.div-sidebar:hover{
+  background-color: rgb(244, 244, 244);
+}
+.div-sidebar img{
+  height: 36px;
+}
+.div-sidebar div{
+  font-size: 12px;
+}

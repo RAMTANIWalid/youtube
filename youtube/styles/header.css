@@ -1,0 +1,203 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    padding-right: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    z-index: 2;
+}
+.left-div{
+    width: 200px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.button-hamburger{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    background-color: white;
+    border: none;
+}
+.hamburger-menu-image{
+    height: 24px;
+}
+.button-youtube{
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border: 0;
+}
+.youtube-logo-image{
+    height: 24px;
+}
+.middle-div{
+    flex: 1;
+    margin-left: 75px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search-button{
+    width: 55px;
+    height: 40px;
+    margin-left: -1px;
+    margin-right: 8px;
+    background-color: rgb(234, 227, 227);
+    border-width: 1;
+    border-style: solid;
+    border-color: rgb(229, 223, 223);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.search-button p{
+    position: absolute;
+    bottom: -30px;
+    color: white;
+    background-color: rgb(118, 116, 116);
+    font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.search-button:hover p{
+   opacity: 1;
+}
+
+.search-image{
+    height: 20px;
+}
+.button-voice{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: rgb(227, 227, 227);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+
+}
+.button-voice p, .upload-div p{
+    position: absolute;
+    bottom: -30px;
+    color: white;
+    background-color: rgb(118, 116, 116);
+    font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+    pointer-events: none;
+}
+.voice-image{
+    height: 24px;
+}
+.button-voice:hover p, .upload-div:hover p{
+    opacity: 1
+}
+.right-div{
+    width: 200px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.upload-image, .youtube-app-image, .notification-image, .user-image{
+    height: 30px;
+}
+.search-bar:active{
+    border-color: rgb(164, 164, 164);
+}
+.user-image{
+    border-radius: 15px;
+    margin-left: 10px;
+}
+.search-bar{
+    flex: 1;
+    width: 0;
+    padding: 0;
+    height: 39px;
+    font-size: 20px;
+    font-family: Roboto, Arial;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(164, 164, 164);
+    border-style: solid;
+    box-shadow: inset 2px 2px rgba(190, 190, 190, 0.05);
+    padding-left: 8px;
+}
+.search-bar::placeholder{
+    color: rgb(222, 222, 222);
+}
+
+.notification-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.notification-div .p{
+    position: absolute;
+    bottom: -30px;
+    color: white;
+    background-color: rgb(118, 116, 116);
+    font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+    pointer-events: none;
+}
+.notification-div:hover .p{
+    opacity: 1;
+}
+.notification-message{
+  position: absolute;
+  top :-2px;
+  right: -3px;
+  color: white;
+  background: rgb(125, 1, 1);
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+}
+
+.upload-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.profile-div{
+    cursor: pointer;
+}
